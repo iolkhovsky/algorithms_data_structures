@@ -1,0 +1,11 @@
+cc_library(
+    name = "structures_library",
+    srcs = [
+    ],
+    hdrs = [
+        "hash_map.hpp",
+    ],
+    visibility = [
+        "//visibility:public",
+    ],
+)
