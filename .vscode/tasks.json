@@ -6,7 +6,7 @@
         {
             "label": "Build (Debug)",
             "type": "shell",
-            "command": "BAZEL_CXXOPTS='-std=c++17' bazel build //apps:hashmap_demo -c dbg",
+            "command": "BAZEL_CXXOPTS='-std=c++17' bazel build //apps:graphsearch_demo -c dbg",
             "args": [
             ],
             "group": {

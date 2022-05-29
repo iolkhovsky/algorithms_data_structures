@@ -21,3 +21,15 @@ cc_binary(
     ],
     visibility = ["//visibility:public"],
 )
+
+cc_binary(
+    name = "graphsearch_demo",
+    srcs = [
+        "graphsearch_demo.cpp",
+        "prettyprint.hpp",
+    ],
+    deps = [
+        "//algorithms:algorithms_library",
+    ],
+    visibility = ["//visibility:public"],
+)

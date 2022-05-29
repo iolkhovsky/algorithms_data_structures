@@ -21,3 +21,15 @@ cc_test(
     "//structures:structures_library",
   ],
 )
+
+cc_test(
+  name = "bfs_tests",
+  size = "small",
+  srcs = [
+      "bfs_tests.cpp",
+  ],
+  deps = [
+    "@gtest//:gtest",
+    "//algorithms:algorithms_library",
+  ],
+)
