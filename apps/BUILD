@@ -33,3 +33,15 @@ cc_binary(
     ],
     visibility = ["//visibility:public"],
 )
+
+cc_binary(
+    name = "dijkstra_demo",
+    srcs = [
+        "dijkstra_demo.cpp",
+        "prettyprint.hpp",
+    ],
+    deps = [
+        "//algorithms:algorithms_library",
+    ],
+    visibility = ["//visibility:public"],
+)

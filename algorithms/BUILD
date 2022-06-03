@@ -9,6 +9,8 @@ cc_library(
         "mergesort.hpp",
         "quicksort.hpp",
         "graphsearch.hpp",
+        "dijkstra.hpp",
+        "graph.hpp",
     ],
     visibility = [
         "//visibility:public",
