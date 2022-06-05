@@ -45,3 +45,15 @@ cc_binary(
     ],
     visibility = ["//visibility:public"],
 )
+
+cc_binary(
+    name = "heap_demo",
+    srcs = [
+        "heap_demo.cpp",
+        "prettyprint.hpp",
+    ],
+    deps = [
+        "//structures:structures_library",
+    ],
+    visibility = ["//visibility:public"],
+)

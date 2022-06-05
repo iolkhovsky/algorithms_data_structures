@@ -4,6 +4,7 @@ cc_library(
     ],
     hdrs = [
         "hash_map.hpp",
+        "heap.hpp",
     ],
     visibility = [
         "//visibility:public",
