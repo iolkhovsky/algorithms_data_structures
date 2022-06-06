@@ -6,7 +6,7 @@
         {
             "label": "Build (Debug)",
             "type": "shell",
-            "command": "BAZEL_CXXOPTS='-std=c++17' bazel build //apps:heap_demo -c dbg",
+            "command": "BAZEL_CXXOPTS='-std=c++17' bazel build //apps:lru_cache_demo -c dbg",
             "args": [
             ],
             "group": {

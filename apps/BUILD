@@ -57,3 +57,15 @@ cc_binary(
     ],
     visibility = ["//visibility:public"],
 )
+
+cc_binary(
+    name = "lru_cache_demo",
+    srcs = [
+        "lru_cache_demo.cpp",
+        "prettyprint.hpp",
+    ],
+    deps = [
+        "//structures:structures_library",
+    ],
+    visibility = ["//visibility:public"],
+)
