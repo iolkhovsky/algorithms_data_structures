@@ -6,7 +6,7 @@
         {
             "label": "Build (Debug)",
             "type": "shell",
-            "command": "BAZEL_CXXOPTS='-std=c++17' bazel build //problems:print_foobar -c dbg",
+            "command": "BAZEL_CXXOPTS='-std=c++17' bazel build //problems:h2o_builder -c dbg",
             "args": [
             ],
             "group": {

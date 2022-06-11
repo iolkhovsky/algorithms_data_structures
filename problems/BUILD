@@ -47,3 +47,14 @@ cc_binary(
         "-lpthread",
     ],
 )
+
+cc_binary(
+    name = "h2o_builder",
+    srcs = [
+        "h2o_builder.cpp",
+    ],
+    visibility = ["//visibility:public"],
+    linkopts = [
+        "-lpthread",
+    ],
+)
