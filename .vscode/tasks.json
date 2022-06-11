@@ -6,7 +6,7 @@
         {
             "label": "Build (Debug)",
             "type": "shell",
-            "command": "BAZEL_CXXOPTS='-std=c++17' bazel build //problems:array_to_tree -c dbg",
+            "command": "BAZEL_CXXOPTS='-std=c++17' bazel build //problems:tree_from_preorder -c dbg",
             "args": [
             ],
             "group": {

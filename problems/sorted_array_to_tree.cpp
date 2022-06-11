@@ -2,16 +2,13 @@
 #include <vector>
 #include <queue>
 
-using namespace std;
+#include "problems/tree_utils.hpp"
 
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode() : val(0), left(nullptr), right(nullptr) {}
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-};
+/*
+https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+*/
+
+using namespace std;
 
 class Solution {
 public:
@@ -31,35 +28,11 @@ public:
     }
 };
 
-ostream& operator<<(ostream&os, const TreeNode& root) {
-    os << "===== Tree =====\n";
-    queue<const TreeNode*> fifo;
-    fifo.push(&root);
-
-    int cnt = 0;
-    int level = 0;
-    while (!fifo.empty()) {
-        const auto* pnode = fifo.front();
-        fifo.pop();
-        if (++cnt == (0x1 << level)) {
-            os << "\n";
-            level++;
-        }
-        if (pnode) {
-            os << pnode->val << " ";
-            fifo.push(pnode->left);
-            fifo.push(pnode->right);
-        } else {
-            os << "null" << " ";
-        }
-    }
-    os << "\n";
-    return os;
-}
-
 int main(int argc, char** argv) {
     vector<int> nums = {-10, -3, 0, 5, 9};
 
     TreeNode* root = Solution().sortedArrayToBST(nums);
     cout << *root;
+
+    return 0;
 }
