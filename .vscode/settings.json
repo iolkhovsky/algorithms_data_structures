@@ -61,6 +61,7 @@
         "list": "cpp",
         "iomanip": "cpp",
         "mutex": "cpp",
-        "cfenv": "cpp"
+        "cfenv": "cpp",
+        "future": "cpp"
     }
 }

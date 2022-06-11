@@ -17,3 +17,22 @@ cc_binary(
     ],
     visibility = ["//visibility:public"],
 )
+
+cc_binary(
+    name = "min_ops_ro_reduce_x",
+    srcs = [
+        "min_ops_ro_reduce_x_to_zero.cpp",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "print_in_order",
+    srcs = [
+        "print_in_order.cpp",
+    ],
+    visibility = ["//visibility:public"],
+    linkopts = [
+        "-lpthread",
+    ],
+)
