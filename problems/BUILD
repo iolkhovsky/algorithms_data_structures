@@ -36,3 +36,14 @@ cc_binary(
         "-lpthread",
     ],
 )
+
+cc_binary(
+    name = "print_foobar",
+    srcs = [
+        "print_foobar.cpp",
+    ],
+    visibility = ["//visibility:public"],
+    linkopts = [
+        "-lpthread",
+    ],
+)
