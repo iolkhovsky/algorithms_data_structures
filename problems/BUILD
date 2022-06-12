@@ -58,3 +58,14 @@ cc_binary(
         "-lpthread",
     ],
 )
+
+cc_binary(
+    name = "print_zero_even_odd",
+    srcs = [
+        "print_zero_even_odd.cpp",
+    ],
+    visibility = ["//visibility:public"],
+    linkopts = [
+        "-lpthread",
+    ],
+)
