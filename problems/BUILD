@@ -77,3 +77,11 @@ cc_binary(
     ],
     visibility = ["//visibility:public"],
 )
+
+cc_binary(
+    name = "palidrome_partitioning",
+    srcs = [
+        "palidrome_partitioning.cpp",
+    ],
+    visibility = ["//visibility:public"],
+)

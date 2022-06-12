@@ -6,7 +6,7 @@
         {
             "label": "Build (Debug)",
             "type": "shell",
-            "command": "BAZEL_CXXOPTS='-std=c++17' bazel build //problems:3sum -c dbg",
+            "command": "BAZEL_CXXOPTS='-std=c++17' bazel build //problems:palidrome_partitioning -c dbg",
             "args": [
             ],
             "group": {
